@@ -1,5 +1,5 @@
 # cPlusWebDemo
-C++ 服务器相关的demos
+C/C++ 服务器相关的demos
 
 ## socket
 - 基础的由socket相关API构建的服务器
