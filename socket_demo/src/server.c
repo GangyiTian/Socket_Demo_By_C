@@ -2,7 +2,6 @@
 
 #define SERV_PORT 9527
 
-
 int main(int argc, char *argv[]){
 	int lfd = 0, cfd = 0, ret;
 	char buf[BUFSIZ], client_IP[1024];
@@ -18,10 +17,7 @@ int main(int argc, char *argv[]){
 		sys_err("socket_error");
 	}
 	Bind(lfd, (struct sockaddr *)&serv_addr, sizeof(serv_addr));
-
 	Listen(lfd, 128);
-
-
 
 	clit_addr_len = sizeof(clit_addr);
 	cfd = Accept(lfd, (struct sockaddr *)&clit_addr, &clit_addr_len);
@@ -36,8 +32,8 @@ int main(int argc, char *argv[]){
 		}	
 		write(cfd, buf, ret);
 	}
-	close(cfd);
 
+	close(cfd);
 	close(lfd);
 	return 0;
 }
