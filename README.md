@@ -1,10 +1,16 @@
-# cPlusWebDemo
-C/C++ 服务器相关的demos
+# Socket-C-tech
 
-## socket
-- 基础的由socket相关API构建的服务器
-- 可以对客户端输入的数据进行大小写转换
+## Introduction
+基于`Linux SocketAPI`编写的一些服务器程序，涉及到多路IO复用模型，`select、epoll`等。
 
-## select
-- 基于selectAPI构建的IO复用服务器
-- 可以对客户端输入的数据进行大小写转换
+## Environment Configuration
+
+- Linux环境
+- gcc 4.8 及以上
+- Makefile
+
+## Compile and Execute
+
+- 进入项目文件夹 `cd filename`
+- 执行命令`make`生成可执行文件
+- 执行`server.out` 和 `client.out`
